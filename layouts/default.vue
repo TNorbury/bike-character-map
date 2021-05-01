@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>Hello</h1>
+    <div class="header">
+      <HeaderItem title="Portland Bike Character Map" is-logo="true" link="/" />
+      <HeaderItem title="About" link="/about" />
+    </div>
     <Nuxt />
   </div>
 </template>
@@ -23,6 +26,14 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.header {
+  @apply bg-indigo-100;
+  @apply shadow-lg;
+  @apply p-6;
+  @apply flex;
+  @apply justify-between;
 }
 
 .button--green {
