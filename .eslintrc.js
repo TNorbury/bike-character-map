@@ -4,12 +4,15 @@ module.exports = {
     browser: true,
     node: true
   },
-  extends: [
-    '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended'
-  ],
-  plugins: [
-  ],
+  extends: ["@nuxtjs/eslint-config-typescript", "plugin:nuxt/recommended"],
+  plugins: [],
   // add your custom rules here
-  rules: {}
-}
+  rules: {
+    quotes: ["warn", "double"],
+    "comma-dangle": "off",
+    "quote-props": "off",
+    semi: "off",
+    "vue/singleline-html-element-content-newline": "off",
+    "space-before-function-paren": "off"
+  }
+};
