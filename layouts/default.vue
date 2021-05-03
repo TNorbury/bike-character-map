@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <HeaderItem title="Portland Bike Character Map" is-logo="true" link="/" />
+      <HeaderItem title="Portland Bike Character Map" :is-logo="true" link="/" />
       <HeaderItem title="About" link="/about" />
     </div>
     <Nuxt />

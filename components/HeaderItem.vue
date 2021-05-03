@@ -22,7 +22,7 @@ export default {
     },
   },
   computed: {
-    classObject() {
+    classObject(): { "header--item": boolean; "header--title": boolean } {
       return {
         "header--item": true,
         "header--title": this.isLogo,
