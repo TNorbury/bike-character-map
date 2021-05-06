@@ -4,9 +4,9 @@ updates:
 - package-ecosystem: npm
   directory: '/'
   schedule:
-    interval: daily
+    interval: monthly
     time: '00:00'
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 1
   reviewers:
     - tnorbury
   assignees:
@@ -19,9 +19,9 @@ updates:
 - package-ecosystem: github-actions
   directory: '/'
   schedule:
-    interval: daily
+    interval: monthly
     time: '00:00'
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 1
   reviewers:
     - tnorbury
   assignees:
