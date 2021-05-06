@@ -13,6 +13,8 @@ module.exports = {
     "quote-props": "off",
     semi: "off",
     "vue/singleline-html-element-content-newline": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "no-multiple-empty-lines": ["warn", { max: 3 }]
   }
 };
