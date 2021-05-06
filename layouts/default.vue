@@ -5,6 +5,7 @@
       <HeaderItem title="About" link="/about" />
     </div>
     <Nuxt />
+    <div>Footer</div>
   </div>
 </template>
 

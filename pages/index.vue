@@ -14,7 +14,7 @@ export default Vue.extend({});
 
 <style>
 .container {
-  @apply min-h-screen;
+  @apply min-h-full;
   @apply flex;
   @apply justify-center;
   @apply items-center;
