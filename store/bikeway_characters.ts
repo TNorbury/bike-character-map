@@ -11,9 +11,9 @@ import BikewayCharacter from "~/models/bikeway_character";
 })
 export default class BikewayCharactersStoreModule extends VuexModule {
   characters: BikewayCharacter[] = [
-    { name: "A", img: "", location: [45.528407, -122.695292] },
-    { name: "B", img: "", location: [45.5251, -122.675] },
-    { name: "C", img: "", location: [45.503906, -122.640421] }
+    { name: "Chicken", img: "", location: [45.556918, -122.672835] },
+    { name: "Strawberry", img: "", location: [45.573415, -122.677904] },
+    { name: "Fish", img: "", location: [45.566418, -122.684082] }
   ];
 
   get getCharacters(): BikewayCharacter[] {

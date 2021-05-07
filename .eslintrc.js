@@ -15,6 +15,7 @@ module.exports = {
     "vue/singleline-html-element-content-newline": "off",
     "space-before-function-paren": "off",
     "@typescript-eslint/no-unused-vars": ["warn"],
-    "no-multiple-empty-lines": ["warn", { max: 3 }]
+    "no-multiple-empty-lines": ["warn", { max: 3 }],
+    "arrow-parens": "off",
   }
 };

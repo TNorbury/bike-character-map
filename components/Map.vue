@@ -9,6 +9,7 @@
         :key="character.name"
         :lat-lng="character.location"
       >
+        <l-icon icon-url="/mdi_bike.svg" :icon-size="[24, 24]" />
         <l-popup>
           <span>{{ character.name }}</span>
         </l-popup>
@@ -32,7 +33,6 @@ export default Vue.extend({
       attribution:
         // eslint-disable-next-line quotes
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-
     };
   },
   computed: {
