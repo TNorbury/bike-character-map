@@ -10,6 +10,8 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
+  target: "static",
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
@@ -23,6 +25,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
+    "@nuxt/postcss8",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss"
   ],
