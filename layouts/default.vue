@@ -1,10 +1,14 @@
 <template>
-  <div>
+  <div class="app">
     <div class="header">
-      <HeaderItem title="Portland Bike Character Map" :is-logo="true" link="/" />
+      <HeaderItem
+        title="Portland Bike Character Map"
+        :is-logo="true"
+        link="/"
+      />
       <HeaderItem title="About" link="/about" />
     </div>
-    <Nuxt />
+    <Nuxt class="body" />
     <div class="footer">Footer</div>
   </div>
 </template>
@@ -29,6 +33,12 @@ html {
   margin: 0;
 }
 
+.app {
+  @apply flex;
+  @apply flex-col;
+  @apply min-h-screen;
+}
+
 .header {
   @apply bg-indigo-100;
   @apply shadow-lg;
@@ -36,6 +46,12 @@ html {
   @apply flex;
   @apply justify-between;
   max-height: 10vh;
+}
+
+.body {
+  /* min-height: 80vh;
+  max-height: 90vh; */
+  @apply flex-grow
 }
 
 .footer {
