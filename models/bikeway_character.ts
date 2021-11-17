@@ -1,8 +1,13 @@
-
 /**
  * Represents a single bikeway character
  */
-export default interface BikewayCharacter {
+export default class BikewayCharacter {
+  constructor(name: string, location: number[], img: string) {
+    this.name = name;
+    this.location = location;
+    this.img = img;
+  }
+
   /**
    * The name/description of this character
    */

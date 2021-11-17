@@ -4,5 +4,6 @@
         "nuxt",
         "nuxtjs",
         "tailwindcss"
-    ]
+    ],
+    "css.validate": false
 }

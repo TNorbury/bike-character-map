@@ -14,12 +14,19 @@ export default Vue.extend({});
 
 <style>
 .container {
-  @apply min-h-full;
+  /* min-height: 500px;
+  @apply h-3/4; */
+  /* @apply min-h-full; */
+  /* @apply h-screen; */
+  min-height: 90vh;
+  height: 90vh;
   @apply flex;
-  @apply justify-center;
-  @apply items-center;
+  /* @apply justify-center; */
+  /* @apply items-center; */
   @apply text-center;
   @apply mx-auto;
+  /* @apply m-1; */
+  @apply p-2;
 }
 
 .title {

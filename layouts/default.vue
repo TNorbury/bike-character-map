@@ -5,7 +5,7 @@
       <HeaderItem title="About" link="/about" />
     </div>
     <Nuxt />
-    <div>Footer</div>
+    <div class="footer">Footer</div>
   </div>
 </template>
 
@@ -35,6 +35,16 @@ html {
   @apply p-6;
   @apply flex;
   @apply justify-between;
+  max-height: 10vh;
+}
+
+.footer {
+  @apply bg-indigo-100;
+  @apply shadow-lg;
+  @apply p-6;
+  @apply flex;
+  @apply justify-between;
+  max-height: 10vh;
 }
 
 .button--green {
