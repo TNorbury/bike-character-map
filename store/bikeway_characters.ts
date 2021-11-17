@@ -30,6 +30,16 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       name: "Snake",
       img: "/characters/snake.jpg",
       location: [45.503386, -122.643364]
+    },
+    {
+      name: "Flowers (18th & Flanders)",
+      img: "/characters/flowers-f18.jpg",
+      location: [45.5256975, -122.6893111]
+    },
+    {
+      name: "One Big Shoe",
+      img: "/characters/one_big_shoe-i18.jpg",
+      location: [45.5278728, -122.6894123]
     }
   ];
 
