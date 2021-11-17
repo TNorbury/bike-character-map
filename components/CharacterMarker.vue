@@ -18,9 +18,15 @@
 import Vue, { PropOptions } from "vue";
 
 import BikewayCharacter from "~/models/bikeway_character";
+
+/**
+ * Options for the leaflet popup component
+ */
 interface PopupOptions {
   minWidth: Number;
+  maxWidth: Number;
 }
+
 export default Vue.extend({
   props: {
     character: {
@@ -36,6 +42,7 @@ export default Vue.extend({
     getOptions(): PopupOptions {
       return {
         minWidth: this.minWidth,
+        maxWidth: this.minWidth,
       };
     },
     gMapsUrls(): String {
@@ -50,5 +57,3 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-</style>
