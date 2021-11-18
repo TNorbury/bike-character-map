@@ -1,0 +1,3 @@
+[submodule "scripts/image_optimize"]
+	path = scripts/image_optimize
+	url = https://github.com/TNorbury/image_web_optimize.git
