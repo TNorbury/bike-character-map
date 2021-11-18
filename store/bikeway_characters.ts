@@ -40,6 +40,11 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       name: "One Big Shoe",
       img: "/characters/one_big_shoe-i18.jpg",
       location: [45.5278728, -122.6894123]
+    },
+    {
+      name: "David Bowie",
+      img: "/characters/bowie.jpg",
+      location: [45.516583, -122.681149]
     }
   ];
 
