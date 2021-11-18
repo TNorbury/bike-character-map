@@ -13,7 +13,7 @@ import Vue, { PropOptions } from "vue";
 type _HeaderItemClass = {
   "header--item": boolean;
   "header--title": boolean;
-}
+};
 
 export default Vue.extend({
   props: {
@@ -47,6 +47,9 @@ export default Vue.extend({
 }
 
 .header--title {
-  @apply text-3xl;
+  @apply text-xl;
+  @screen md {
+    @apply text-3xl;
+  }
 }
 </style>

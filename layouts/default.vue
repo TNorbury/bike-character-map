@@ -9,7 +9,7 @@
       <HeaderItem title="About" link="/about" />
     </div>
     <Nuxt class="body" />
-    <div class="footer">Footer</div>
+    <Footer />
   </div>
 </template>
 
@@ -51,16 +51,7 @@ html {
 .body {
   /* min-height: 80vh;
   max-height: 90vh; */
-  @apply flex-grow
-}
-
-.footer {
-  @apply bg-indigo-100;
-  @apply shadow-lg;
-  @apply p-6;
-  @apply flex;
-  @apply justify-between;
-  max-height: 10vh;
+  @apply flex-grow;
 }
 
 .button--green {
