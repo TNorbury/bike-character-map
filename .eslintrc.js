@@ -6,6 +6,9 @@ module.exports = {
   },
   extends: ["@nuxtjs/eslint-config-typescript", "plugin:nuxt/recommended"],
   plugins: [],
+  ignorePatterns: [
+    "scripts/image_optimize"
+  ],
   // add your custom rules here
   rules: {
     quotes: ["warn", "double"],

@@ -8,7 +8,7 @@
         v-for="character in getCharacters"
         :key="character.name"
         :character="character"
-        :min-width="getMinWidthForMarkeres"
+        :width="getWidthForMarkeres"
       >
       </CharacterMarker>
     </l-map>
@@ -38,8 +38,24 @@ export default Vue.extend({
     getCharacters(): BikewayCharacter[] {
       return bikewayCharacterStore.getCharacters;
     },
-    getMinWidthForMarkeres(): Number {
-      return this.windowWidth * 0.09;
+    getWidthForMarkeres(): Number {
+      // extra small screen size
+      let fraction = 0.5;
+
+      const windowWidth = this.windowWidth;
+
+      // large screen size
+      if (windowWidth >= 992) {
+        fraction = 0.125;
+      } else if (windowWidth >= 768) {
+        // medium screen size
+        fraction = 0.2;
+      } else if (windowWidth >= 576) {
+        // small screen size
+        fraction = 0.25;
+      }
+
+      return this.windowWidth * fraction;
     },
   },
 
@@ -62,33 +78,20 @@ export default Vue.extend({
 
 <style>
 .map {
-  /* height: parent;
-  width: 100%; */
-  /* @apply h-11; */
   @apply h-full;
   @apply w-full;
   @apply min-h-full;
-  /* @apply min-h-full; */
-  /* @apply h-5/6; */
-  /* height: 50%; */
-  /* height: 100%; */
-  /* height: 50vh; */
-  /* width: 100% */
 }
 .bike-icon-background {
   background-color: rgba(149, 191, 231, 0.75);
   border-radius: 5px;
   @apply w-8;
   @apply h-8;
-  /* width: 32px; */
-  /* height: 32px; */
 }
 .bike-icon {
   padding: 2px;
   @apply w-8;
   @apply h-8;
-  /* width: 32px; */
-  /* height: 32px; */
 }
 .popup-title {
   @apply font-bold;

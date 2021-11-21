@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Optimize Images",
+			"command": "cd scripts/image_optimize && npm start && cp -r out/. ../../static/characters/",
+			"problemMatcher": []
+		}
+	]
+}

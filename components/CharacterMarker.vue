@@ -33,7 +33,7 @@ export default Vue.extend({
       type: BikewayCharacter,
       required: true,
     } as PropOptions<BikewayCharacter>,
-    minWidth: {
+    width: {
       type: Number,
       required: true,
     } as PropOptions<Number>,
@@ -41,8 +41,8 @@ export default Vue.extend({
   computed: {
     getOptions(): PopupOptions {
       return {
-        minWidth: this.minWidth,
-        maxWidth: this.minWidth,
+        minWidth: this.width,
+        maxWidth: this.width,
       };
     },
     gMapsUrls(): String {
