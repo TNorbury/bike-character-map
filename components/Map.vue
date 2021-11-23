@@ -5,7 +5,7 @@
 
       <!-- Create markers for all the characters -->
       <CharacterMarker
-        v-for="character in getCharacters"
+        v-for="character in characters"
         :key="character.name"
         :character="character"
         :width="getWidthForMarkers"
@@ -20,9 +20,18 @@ import Vue from "vue";
 import { bikewayCharacterStore } from "~/store";
 import BikewayCharacter from "~/models/bikeway_character";
 
+interface ComponentData {
+  zoom: Number;
+  center: Number[];
+  url: String;
+  attribution: String;
+  windowWidth: Number;
+  characters: BikewayCharacter[];
+}
+
 export default Vue.extend({
   name: "CharacterMap",
-  data() {
+  data(): ComponentData {
     return {
       zoom: 12,
       center: [45.5251, -122.675],
@@ -31,13 +40,11 @@ export default Vue.extend({
         // eslint-disable-next-line quotes
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       windowWidth: window.innerWidth,
+      characters: bikewayCharacterStore.getCharacters,
     };
   },
 
   computed: {
-    getCharacters(): BikewayCharacter[] {
-      return bikewayCharacterStore.getCharacters;
-    },
     getWidthForMarkers(): Number {
       // extra small screen size
       let fraction = 0.5;
@@ -55,7 +62,7 @@ export default Vue.extend({
         fraction = 0.25;
       }
 
-      return this.windowWidth * fraction;
+      return +this.windowWidth * fraction;
     },
   },
 
