@@ -5,8 +5,8 @@
         <img class="bike-icon" src="/mdi_bike.svg" alt="" />
       </div>
     </l-icon>
-    <l-popup :options="getOptions">
-      <a :href="gMapsUrls" target="_blank">
+    <l-popup :options="popupOptions">
+      <a :href="gMapsUrl" target="_blank">
         <span class="popup-title">{{ character.name }}</span>
       </a>
       <img v-if="hasImage(character.img)" :src="character.img" alt="" />
@@ -27,6 +27,14 @@ interface PopupOptions {
   maxWidth: Number;
 }
 
+/**
+ * The type of data returned from data()
+ */
+interface ComponentData {
+  popupOptions: PopupOptions;
+  gMapsUrl: String;
+}
+
 export default Vue.extend({
   props: {
     character: {
@@ -38,17 +46,17 @@ export default Vue.extend({
       required: true,
     } as PropOptions<Number>,
   },
-  computed: {
-    getOptions(): PopupOptions {
-      return {
+
+  data(): ComponentData {
+    return {
+      popupOptions: {
         minWidth: this.width,
         maxWidth: this.width,
-      };
-    },
-    gMapsUrls(): String {
-      return `https://www.google.com/maps/search/?api=1&query=${this.character.location[0]},${this.character.location[1]}`;
-    },
+      },
+      gMapsUrl: `https://www.google.com/maps/search/?api=1&query=${this.character.location[0]},${this.character.location[1]}`,
+    };
   },
+
   methods: {
     hasImage(image: String): boolean {
       return image !== "";
@@ -56,4 +64,27 @@ export default Vue.extend({
   },
 });
 </script>
+
+
+<style>
+.bike-icon-background {
+  background-color: rgba(149, 191, 231, 0.75);
+  border-radius: 5px;
+  @apply w-8;
+  @apply h-8;
+
+  @apply absolute;
+  @apply -left-4;
+  @apply -top-4;
+}
+.bike-icon {
+  padding: 2px;
+  @apply w-8;
+  @apply h-8;
+}
+.popup-title {
+  @apply font-bold;
+  @apply text-base;
+}
+</style>
 

@@ -5,10 +5,10 @@
 
       <!-- Create markers for all the characters -->
       <CharacterMarker
-        v-for="character in getCharacters"
+        v-for="character in characters"
         :key="character.name"
         :character="character"
-        :width="getWidthForMarkeres"
+        :width="getWidthForMarkers"
       >
       </CharacterMarker>
     </l-map>
@@ -20,9 +20,18 @@ import Vue from "vue";
 import { bikewayCharacterStore } from "~/store";
 import BikewayCharacter from "~/models/bikeway_character";
 
+interface ComponentData {
+  zoom: Number;
+  center: Number[];
+  url: String;
+  attribution: String;
+  windowWidth: Number;
+  characters: BikewayCharacter[];
+}
+
 export default Vue.extend({
   name: "CharacterMap",
-  data() {
+  data(): ComponentData {
     return {
       zoom: 12,
       center: [45.5251, -122.675],
@@ -31,14 +40,12 @@ export default Vue.extend({
         // eslint-disable-next-line quotes
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       windowWidth: window.innerWidth,
+      characters: bikewayCharacterStore.getCharacters,
     };
   },
 
   computed: {
-    getCharacters(): BikewayCharacter[] {
-      return bikewayCharacterStore.getCharacters;
-    },
-    getWidthForMarkeres(): Number {
+    getWidthForMarkers(): Number {
       // extra small screen size
       let fraction = 0.5;
 
@@ -55,7 +62,7 @@ export default Vue.extend({
         fraction = 0.25;
       }
 
-      return this.windowWidth * fraction;
+      return +this.windowWidth * fraction;
     },
   },
 
@@ -81,20 +88,5 @@ export default Vue.extend({
   @apply h-full;
   @apply w-full;
   @apply min-h-full;
-}
-.bike-icon-background {
-  background-color: rgba(149, 191, 231, 0.75);
-  border-radius: 5px;
-  @apply w-8;
-  @apply h-8;
-}
-.bike-icon {
-  padding: 2px;
-  @apply w-8;
-  @apply h-8;
-}
-.popup-title {
-  @apply font-bold;
-  @apply text-base;
 }
 </style>

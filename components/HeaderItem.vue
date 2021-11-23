@@ -15,6 +15,10 @@ type _HeaderItemClass = {
   "header--title": boolean;
 };
 
+interface ComponentData {
+  classObject: _HeaderItemClass;
+}
+
 export default Vue.extend({
   props: {
     title: {
@@ -29,13 +33,13 @@ export default Vue.extend({
       type: String,
     } as PropOptions<string>,
   },
-  computed: {
-    classObject(): _HeaderItemClass {
-      return {
+  data(): ComponentData {
+    return {
+      classObject: {
         "header--item": true,
         "header--title": this.isLogo,
-      };
-    },
+      },
+    };
   },
 });
 </script>
