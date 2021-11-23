@@ -1,9 +1,10 @@
 {
     "cSpell.words": [
-        "Vuex",
         "nuxt",
         "nuxtjs",
-        "tailwindcss"
+        "PTFC",
+        "tailwindcss",
+        "Vuex"
     ],
     "css.validate": false
 }

@@ -57,8 +57,8 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       location: [45.512982, -122.660971],
     },
     {
-      name: "PTFC",
-      img: "/characters/ptfc.jpg",
+      name: "PTFC (Hawthorne Bridge)",
+      img: "/characters/ptfc_hawthorne.jpg",
       location: [45.514223, -122.67428],
     },
     {
@@ -70,6 +70,31 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       name: "Salmon",
       img: "/characters/salmon.jpg",
       location: [45.512041, -122.653548],
+    },
+    {
+      name: "Muhammad Ali",
+      img: "/characters/ali.jpg",
+      location: [45.534360, -122.667828],
+    },
+    {
+      name: "Autobot",
+      img: "/characters/autobot.jpg",
+      location: [45.533327, -122.671294],
+    },
+    {
+      name: "Dalmatian",
+      img: "/characters/dalmatian.jpg",
+      location: [45.534342, -122.655944],
+    },
+    {
+      name: "Flower Queen",
+      img: "/characters/flower_queen.jpg",
+      location: [45.533918, -122.670173],
+    },
+    {
+      name: "PTFC (Broadway Bridge)",
+      img: "/characters/ptfc_broadway.jpg",
+      location: [45.529585, -122.677714],
     },
   ];
 
