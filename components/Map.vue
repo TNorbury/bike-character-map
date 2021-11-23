@@ -8,7 +8,7 @@
         v-for="character in getCharacters"
         :key="character.name"
         :character="character"
-        :width="getWidthForMarkeres"
+        :width="getWidthForMarkers"
       >
       </CharacterMarker>
     </l-map>
@@ -38,7 +38,7 @@ export default Vue.extend({
     getCharacters(): BikewayCharacter[] {
       return bikewayCharacterStore.getCharacters;
     },
-    getWidthForMarkeres(): Number {
+    getWidthForMarkers(): Number {
       // extra small screen size
       let fraction = 0.5;
 
@@ -81,20 +81,5 @@ export default Vue.extend({
   @apply h-full;
   @apply w-full;
   @apply min-h-full;
-}
-.bike-icon-background {
-  background-color: rgba(149, 191, 231, 0.75);
-  border-radius: 5px;
-  @apply w-8;
-  @apply h-8;
-}
-.bike-icon {
-  padding: 2px;
-  @apply w-8;
-  @apply h-8;
-}
-.popup-title {
-  @apply font-bold;
-  @apply text-base;
 }
 </style>

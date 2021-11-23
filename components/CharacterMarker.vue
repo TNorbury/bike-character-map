@@ -57,3 +57,26 @@ export default Vue.extend({
 });
 </script>
 
+
+<style>
+.bike-icon-background {
+  background-color: rgba(149, 191, 231, 0.75);
+  border-radius: 5px;
+  @apply w-8;
+  @apply h-8;
+
+  @apply absolute;
+  @apply -left-4;
+  @apply -top-4;
+}
+.bike-icon {
+  padding: 2px;
+  @apply w-8;
+  @apply h-8;
+}
+.popup-title {
+  @apply font-bold;
+  @apply text-base;
+}
+</style>
+

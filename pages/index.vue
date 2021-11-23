@@ -12,20 +12,13 @@ import Vue from "vue";
 export default Vue.extend({});
 </script>
 
-<style>
+<style scoped>
 .container {
-  /* min-height: 500px;
-  @apply h-3/4; */
-  /* @apply min-h-full; */
-  /* @apply h-screen; */
   min-height: 90vh;
   height: 90vh;
   @apply flex;
-  /* @apply justify-center; */
-  /* @apply items-center; */
   @apply text-center;
   @apply mx-auto;
-  /* @apply m-1; */
   @apply p-2;
 }
 
