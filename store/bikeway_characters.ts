@@ -96,6 +96,21 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       img: "/characters/ptfc_broadway.jpg",
       location: [45.529585, -122.677714],
     },
+    {
+      name: "Green Shell",
+      img: "/characters/green_shell_williams.jpg",
+      location: [45.562864, -122.666922],
+    },
+    {
+      name: "Red Shell",
+      img: "/characters/red_shell_williams.jpg",
+      location: [45.536546, -122.666726],
+    },
+    {
+      name: "I ❤️ My Bike",
+      img: "/characters/i_love_my_bike.jpg",
+      location: [45.562096, -122.666953],
+    },
   ];
 
   get getCharacters(): BikewayCharacter[] {
