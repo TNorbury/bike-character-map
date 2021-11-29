@@ -9,7 +9,7 @@
       <a :href="gMapsUrl" target="_blank">
         <span class="popup-title">{{ character.name }}</span>
       </a>
-      <img v-if="hasImage(character.img)" :src="character.img" alt="" />
+      <nuxt-img v-if="hasImage(character.img)" :src="character.img" alt="" />
     </l-popup>
   </l-marker>
 </template>
