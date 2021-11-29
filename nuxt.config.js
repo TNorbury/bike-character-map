@@ -9,10 +9,10 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "A map of the bikeway/bikelane characters that live in Portland, Oregon"
-      }
+          "A map of the bikeway/bikelane characters that live in Portland, Oregon",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   target: "static",
@@ -32,21 +32,26 @@ export default {
     "@nuxt/typescript-build",
     "@nuxt/postcss8",
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
-    ["nuxt-leaflet", { ssr: false }]
+    ["nuxt-leaflet", { ssr: false }],
+    "@nuxt/image",
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en"
-    }
+      lang: "en",
+    },
+  },
+
+  image: {
+    provider: "netlify",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -60,8 +65,8 @@ export default {
 
       config.module.rules.push({
         test: /\.svg$/,
-        use: ["vue-loader", "vue-svg-loader"]
+        use: ["vue-loader", "vue-svg-loader"],
       });
-    }
-  }
+    },
+  },
 };
