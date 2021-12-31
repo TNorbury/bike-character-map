@@ -151,6 +151,86 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       img: "/characters/sun_hat.jpg",
       location: [45.534047058386456, -122.69068098552964],
     },
+    {
+      name: "Orange Blossom",
+      img: "/characters/orange_blossom.jpg",
+      location: [45.46501900818282, -122.61659346850753],
+    },
+    {
+      name: "Sun Hat",
+      img: "/characters/sun_hat.jpg",
+      location: [45.534047058386456, -122.69068098552964],
+    },
+    {
+      name: "Super T",
+      img: "/characters/super_t.jpg",
+      location: [45.465037117541684, -122.61801741119696],
+    },
+    {
+      name: "Decepticon Speed Bump",
+      img: "/characters/decepticon_speedbump.jpg",
+      location: [45.46505425046001, -122.61895583032613],
+    },
+    {
+      name: "Autobot Speed Bump",
+      img: "/characters/autobot_speedbump.jpg",
+      location: [45.46499864082237, -122.61897335900773],
+    },
+    {
+      name: "Strawberry Shortcake",
+      img: "/characters/strawberry_shortcake.jpg",
+      location: [45.4650093071979, -122.61926181069501],
+    },
+    {
+      name: "Wizard Bike Chased By Wolves",
+      img: "/characters/wolves_wizard_bike.jpg",
+      location: [45.46503544461117, -122.62635953649931],
+    },
+    {
+      name: "Charlie Brown",
+      img: "/characters/charlie_brown.jpg",
+      location: [45.46604344928744, -122.63017256207523],
+    },
+    {
+      name: "Snoopy and Woodstock",
+      img: "/characters/snoopy_woodstock.jpg",
+      location: [45.46598889682225, -122.63032276576399],
+    },
+    {
+      name: "Fanny Pack (Reed College)",
+      img: "/characters/fannypack_reed.jpg",
+      location: [45.47928256153778, -122.63256665449349],
+    },
+    {
+      name: "Lightning Bolt (Chevrons)",
+      img: "/characters/lightning_bolt_chevrons.jpg",
+      location: [45.47407650093261, -122.64577171552301],
+    },
+    {
+      name: "Lightning Bolt (Handlebar)",
+      img: "/characters/lightning_bolt_handlebar.jpg",
+      location: [45.47448707083373, -122.64583099368316],
+    },
+    {
+      name: "Confetti Wheels",
+      img: "/characters/confetti_wheels.jpg",
+      location: [45.47511560767873, -122.64587796333548],
+    },
+    {
+      name: "Ladd's Bike Dog (South)",
+      img: "/characters/ladd_bike_dog_south.jpg",
+      location: [45.508206894577924, -122.64917474204606],
+    },
+    {
+      name: "Ladd's Bike Dog (North)",
+      img: "/characters/ladd_bike_dog_north.jpg",
+      location: [45.50893977495209, -122.6493906420553],
+    },
+    {
+      name: "Spiky Backpack and Helmet",
+      img: "/characters/spiky_backpack_helmet.jpg",
+      location: [45.528359277818154, -122.69048241676911],
+    },
   ];
 
   get getCharacters(): BikewayCharacter[] {
