@@ -231,6 +231,17 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       img: "/characters/spiky_backpack_helmet.jpg",
       location: [45.528359277818154, -122.69048241676911],
     },
+
+    {
+      name: "Rooster",
+      img: "/characters/rooster.jpg",
+      location: [45.51179318763765, -122.62023937260435],
+    },
+    {
+      name: "Two Big Feet",
+      img: "/characters/two_big_feet.jpg",
+      location: [45.52196536543716, -122.68668893949689],
+    },
   ];
 
   get getCharacters(): BikewayCharacter[] {
