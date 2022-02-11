@@ -129,7 +129,7 @@ export default class BikewayCharactersStoreModule extends VuexModule {
     {
       name: "Back Dog",
       img: "/characters/back_dog.jpg",
-      location: [45.52263011946452, -122.6778987289385],
+      location: [45.52469094075476, -122.67760105788479],
     },
     {
       name: "Thundercat",
