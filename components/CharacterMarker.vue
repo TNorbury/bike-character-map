@@ -2,7 +2,7 @@
   <l-marker :lat-lng="character.location">
     <l-icon icon-url="/mdi_bike.svg">
       <div class="bike-icon-background">
-        <img class="bike-icon" src="/mdi_bike.svg" alt="" />
+        <img class="bike-icon" :src="getIconPath" :alt="altText" />
       </div>
     </l-icon>
     <l-popup :options="popupOptions">
@@ -56,7 +56,18 @@ export default Vue.extend({
       gMapsUrl: `https://www.google.com/maps/search/?api=1&query=${this.character.location[0]},${this.character.location[1]}`,
     };
   },
-
+  computed: {
+    getIconPath(): string {
+      return this.character.speedBump
+        ? "/looks_black_24dp.svg"
+        : "/mdi_bike.svg";
+    },
+    altText(): string {
+      return this.character.speedBump
+        ? "icon with two half circles, represents speed bumps"
+        : "icon of a bike";
+    },
+  },
   methods: {
     hasImage(image: String): boolean {
       return image !== "";

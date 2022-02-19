@@ -27,7 +27,8 @@ h2 {
   @apply font-bold;
 }
 
-p {
+p,
+li {
   @apply text-left;
   @apply p-4;
 }
