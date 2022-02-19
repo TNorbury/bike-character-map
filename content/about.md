@@ -7,7 +7,7 @@ A quick guide to the two different icons that appears on the map:
 * ![icon of a bike](/mdi_bike.svg)
   Just a normal character that's on a normal road
 * ![icon with two half circles, represents speed bumps](/looks_black_24dp.svg)
-  This means the character is a on a speed bump
+  The character is a on a speed bump
 
 ## Info
 

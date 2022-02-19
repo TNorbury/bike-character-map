@@ -34,6 +34,7 @@ export default class BikewayCharacter {
    */
   speedBump: boolean;
 
+  // this is a POJO's fix
   toJSON() {
     return { ...this };
   }
