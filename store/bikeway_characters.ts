@@ -304,8 +304,8 @@ export default class BikewayCharactersStoreModule extends VuexModule {
     ),
     new BikewayCharacter(
       "Poodle on Speed Bump",
-      "/characters/sheep.jpg",
-      [45.53795503871315, -122.66418751476377],
+      "/characters/speed_bump_poodle.jpg",
+      [45.53596696789395, -122.60892091341458],
       true
     ),
     new BikewayCharacter(
