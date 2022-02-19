@@ -9,7 +9,7 @@
       <HeaderItem title="About" link="/about" />
     </div>
     <Nuxt class="body" />
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 

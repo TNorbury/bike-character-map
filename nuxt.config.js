@@ -38,6 +38,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
+    "@nuxt/content",
     "@nuxtjs/pwa",
     ["nuxt-leaflet", { ssr: false }],
     "@nuxt/image",

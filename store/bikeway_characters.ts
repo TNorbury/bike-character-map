@@ -129,12 +129,123 @@ export default class BikewayCharactersStoreModule extends VuexModule {
     {
       name: "Back Dog",
       img: "/characters/back_dog.jpg",
-      location: [45.52263011946452, -122.6778987289385],
+      location: [45.52469094075476, -122.67760105788479],
     },
     {
       name: "Thundercat",
       img: "/characters/thundercat.jpg",
       location: [45.52841744440432, -122.68742642453344],
+    },
+    {
+      name: "I have no body, and I must bike",
+      img: "/characters/no_body.jpg",
+      location: [45.562673383589825, -122.63274783984437],
+    },
+    {
+      name: "Sun Fairy",
+      img: "/characters/sun_fairy.jpg",
+      location: [45.52212935565733, -122.63262584443916],
+    },
+    {
+      name: "Sun Hat",
+      img: "/characters/sun_hat.jpg",
+      location: [45.534047058386456, -122.69068098552964],
+    },
+    {
+      name: "Orange Blossom",
+      img: "/characters/orange_blossom.jpg",
+      location: [45.46501900818282, -122.61659346850753],
+    },
+    {
+      name: "Sun Hat",
+      img: "/characters/sun_hat.jpg",
+      location: [45.534047058386456, -122.69068098552964],
+    },
+    {
+      name: "Super T",
+      img: "/characters/super_t.jpg",
+      location: [45.465037117541684, -122.61801741119696],
+    },
+    {
+      name: "Decepticon Speed Bump",
+      img: "/characters/decepticon_speedbump.jpg",
+      location: [45.46505425046001, -122.61895583032613],
+    },
+    {
+      name: "Autobot Speed Bump",
+      img: "/characters/autobot_speedbump.jpg",
+      location: [45.46499864082237, -122.61897335900773],
+    },
+    {
+      name: "Strawberry Shortcake",
+      img: "/characters/strawberry_shortcake.jpg",
+      location: [45.4650093071979, -122.61926181069501],
+    },
+    {
+      name: "Wizard Bike Chased By Wolves",
+      img: "/characters/wolves_wizard_bike.jpg",
+      location: [45.46503544461117, -122.62635953649931],
+    },
+    {
+      name: "Charlie Brown",
+      img: "/characters/charlie_brown.jpg",
+      location: [45.46604344928744, -122.63017256207523],
+    },
+    {
+      name: "Snoopy and Woodstock",
+      img: "/characters/snoopy_woodstock.jpg",
+      location: [45.46598889682225, -122.63032276576399],
+    },
+    {
+      name: "Fanny Pack (Reed College)",
+      img: "/characters/fannypack_reed.jpg",
+      location: [45.47928256153778, -122.63256665449349],
+    },
+    {
+      name: "Lightning Bolt (Chevrons)",
+      img: "/characters/lightning_bolt_chevrons.jpg",
+      location: [45.47407650093261, -122.64577171552301],
+    },
+    {
+      name: "Lightning Bolt (Handlebar)",
+      img: "/characters/lightning_bolt_handlebar.jpg",
+      location: [45.47448707083373, -122.64583099368316],
+    },
+    {
+      name: "Confetti Wheels",
+      img: "/characters/confetti_wheels.jpg",
+      location: [45.47511560767873, -122.64587796333548],
+    },
+    {
+      name: "Ladd's Bike Dog (South)",
+      img: "/characters/ladd_bike_dog_south.jpg",
+      location: [45.508206894577924, -122.64917474204606],
+    },
+    {
+      name: "Ladd's Bike Dog (North)",
+      img: "/characters/ladd_bike_dog_north.jpg",
+      location: [45.50893977495209, -122.6493906420553],
+    },
+    {
+      name: "Spiky Backpack and Helmet",
+      img: "/characters/spiky_backpack_helmet.jpg",
+      location: [45.528359277818154, -122.69048241676911],
+    },
+
+    {
+      name: "Rooster",
+      img: "/characters/rooster.jpg",
+      location: [45.51179318763765, -122.62023937260435],
+    },
+    {
+      name: "Two Big Feet",
+      img: "/characters/two_big_feet.jpg",
+      location: [45.52196536543716, -122.68668893949689],
+    },
+    {
+      name: "Sheep",
+      img: "/characters/sheep.jpg",
+      location: [45.53795503871315, -122.66418751476377],
     },
   ];
 
