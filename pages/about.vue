@@ -8,22 +8,22 @@
 import Vue from "vue";
 
 interface ComponentData {
-  aboutPageContent: any
+  aboutPageContent: any;
 }
 
 export default Vue.extend({
-  async asyncData({ $content }) : Promise<ComponentData> {
-    const aboutPageContent = await $content("about").fetch();
-
-    return {
-      aboutPageContent,
-    };
+  data: (): ComponentData => ({
+    aboutPageContent: "",
+  }),
+  async fetch() {
+    this.aboutPageContent = await this.$content("about").fetch();
   },
 });
 </script>
 
 <style>
-h1, h2 {
+h1,
+h2 {
   @apply font-bold;
 }
 
@@ -34,7 +34,7 @@ p {
 
 h6 {
   @apply text-left;
-  @apply p-0
+  @apply p-0;
 }
 </style>
 
