@@ -41,6 +41,7 @@ export default {
     "@nuxtjs/pwa",
     ["nuxt-leaflet", { ssr: false }],
     "@nuxt/image",
+    "@nuxt/content"
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

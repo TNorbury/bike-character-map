@@ -25,6 +25,7 @@
     },
     "types": [
       "@nuxt/types",
+      "@nuxt/content",
       "@nuxt/image",
       "@types/node",
       "nuxt-leaflet",
