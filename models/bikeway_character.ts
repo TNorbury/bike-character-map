@@ -2,10 +2,16 @@
  * Represents a single bikeway character
  */
 export default class BikewayCharacter {
-  constructor(name: string, location: number[], img: string) {
+  constructor(
+    name: string,
+    img: string,
+    location: number[],
+    speedBump: boolean = false
+  ) {
     this.name = name;
     this.location = location;
     this.img = img;
+    this.speedBump = speedBump;
   }
 
   /**
@@ -22,4 +28,14 @@ export default class BikewayCharacter {
    * URL of the image for this character
    */
   img: string;
+
+  /**
+   * Whether or not this character appears on a speed bump.
+   */
+  speedBump: boolean;
+
+  // this is a POJO's fix
+  toJSON() {
+    return { ...this };
+  }
 }
