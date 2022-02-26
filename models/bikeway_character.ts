@@ -6,6 +6,7 @@ export default class BikewayCharacter {
     name: string,
     img: string,
     location: number[],
+    public alt: string,
     speedBump: boolean = false
   ) {
     this.name = name;

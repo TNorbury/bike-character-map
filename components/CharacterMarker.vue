@@ -2,14 +2,19 @@
   <l-marker :lat-lng="character.location">
     <l-icon icon-url="/mdi_bike.svg">
       <div class="bike-icon-background">
-        <img class="bike-icon" :src="getIconPath" :alt="altText" />
+        <img class="bike-icon" :src="getIconPath" :alt="iconAltText" />
       </div>
     </l-icon>
     <l-popup :options="popupOptions">
       <a :href="gMapsUrl" target="_blank">
         <span class="popup-title">{{ character.name }}</span>
       </a>
-      <nuxt-img v-if="hasImage(character.img)" :src="character.img" alt="" />
+      <nuxt-img
+        v-if="hasImage(character.img)"
+        :src="character.img"
+        :alt="imgAltText"
+        :title="imgAltText"
+      />
     </l-popup>
   </l-marker>
 </template>
@@ -62,10 +67,13 @@ export default Vue.extend({
         ? "/looks_black_24dp.svg"
         : "/mdi_bike.svg";
     },
-    altText(): string {
+    iconAltText(): string {
       return this.character.speedBump
         ? "icon with two half circles, represents speed bumps"
         : "icon of a bike";
+    },
+    imgAltText(): string {
+      return this.character.alt;
     },
   },
   methods: {
