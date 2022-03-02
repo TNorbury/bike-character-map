@@ -15,7 +15,7 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       "Chicken",
       "/characters/chicken.jpg",
       [45.556918, -122.672835],
-      "A roaster riding a bike surrounded by 3 chicks",
+      "A roaster riding a bike surrounded by 3 chicks"
     ),
     new BikewayCharacter(
       "Strawberry",
@@ -397,6 +397,12 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       "/characters/tree_river_road.jpg",
       [45.51502715383566, -122.61912189593477],
       "A bike with a repeating pattern of trees, rivers, and roads"
+    ),
+    new BikewayCharacter(
+      "Doughnut",
+      "/characters/doughnut.jpg",
+      [45.541058811799616, -122.6641492786004],
+      "A purple, orange, and white bike. Two doughnuts with orange frosting and sprinkles serve as wheels"
     ),
   ];
 
