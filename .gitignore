@@ -92,5 +92,3 @@ sw.*
 # Local Netlify folder
 .netlify
 
-# ignore this so forks don't have issues?
-.lfsconfig
