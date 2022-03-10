@@ -1,5 +1,5 @@
 <template>
-  <l-marker :lat-lng="character.location">
+  <l-marker :lat-lng="character.location" @popupopen="onOpen">
     <l-icon icon-url="/mdi_bike.svg">
       <div class="bike-icon-background">
         <img class="bike-icon" :src="getIconPath" :alt="iconAltText" />
@@ -9,18 +9,23 @@
       <a :href="gMapsUrl" target="_blank">
         <span class="popup-title">{{ character.name }}</span>
       </a>
+
+      <!-- Only show the image if we have a URL for one... -->
       <nuxt-img
-        v-if="hasImage(character.img)"
-        :src="character.img"
+        v-if="hasImage(imgUrl)"
+        :src="imgUrl"
         :alt="imgAltText"
         :title="imgAltText"
       />
+      <!-- display a spinner when the image is loading -->
+      <div v-if="imgLoading" class="lds-dual-ring"></div>
     </l-popup>
   </l-marker>
 </template>
 
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 import BikewayCharacter from "~/models/bikeway_character";
 
@@ -38,6 +43,8 @@ interface PopupOptions {
 interface ComponentData {
   popupOptions: PopupOptions;
   gMapsUrl: String;
+  imgUrl: String;
+  imgLoading: boolean;
 }
 
 export default Vue.extend({
@@ -59,6 +66,8 @@ export default Vue.extend({
         maxWidth: this.width,
       },
       gMapsUrl: `https://www.google.com/maps/search/?api=1&query=${this.character.location[0]},${this.character.location[1]}`,
+      imgUrl: "",
+      imgLoading: false,
     };
   },
   computed: {
@@ -79,6 +88,18 @@ export default Vue.extend({
   methods: {
     hasImage(image: String): boolean {
       return image !== "";
+    },
+    onOpen(): void {
+      if (this.imgUrl === "" && this.$props.character.img !== "") {
+        this.imgLoading = true;
+
+        const storage = getStorage();
+        getDownloadURL(ref(storage, this.$props.character.img)).then((url) => {
+          this.imgLoading = false;
+
+          this.imgUrl = url;
+        });
+      }
     },
   },
 });
@@ -104,6 +125,32 @@ export default Vue.extend({
 .popup-title {
   @apply font-bold;
   @apply text-base;
+}
+
+.lds-dual-ring {
+  /* display: inline-block; */
+  width: 80px;
+  height: 80px;
+  align-self: center;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>
 
