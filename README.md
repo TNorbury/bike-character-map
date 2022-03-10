@@ -5,13 +5,15 @@
 A map used to display all the wonderful characters that live in the bike lanes and bike ways of Portland, Oregon.
 Feel free to use the issues tab to suggest general site changes, or to inform me about characters that may have been missed (or submit them yourselves (see below))!
 
-## This repo has a sub-module
+## Cloning the project
 
-Be sure to clone like so:
+This repo has a sub-module for the image optimization, so if you're gonna be adding characters, be sure to clone like so:
 
 ```bash
 git clone --recursive https://github.com/TNorbury/bike-character-map.git
 ```
+
+One other thing to note. I use Netlify LFS for storing the images. When selecting this I didn't really think about collaboration lol. But here we are... Anyways, [this page](https://docs.netlify.com/large-media/repository-collaboration/) kinda talks about this. But in the future I'm gonna look into making the whole collaboration experience better.
 
 ## Build Setup
 
@@ -50,7 +52,7 @@ First you'll want to optimize the images, to do this, you can use a little scrip
 Now, you can run the script. If this is your first time, be sure to run the good ol' `npm install`. Now run the following command, which will optimize the images and put them into the folder for submissions (because of how I have lfs setup, this is unfortunately the round about way things have to be set up)
 
 ```bash
-cd scripts/image_optimize && npm start && cp -r out/. ../../character_submissions/
+cd scripts/image_optimize && npm start && cp -r out/. ../../static/characters/
 ```
 
 #### 2. Creating new BikewayCharacter objects
