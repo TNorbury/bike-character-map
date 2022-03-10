@@ -68,7 +68,7 @@ export default {
   },
 
   image: {
-    provider: "netlify",
+    domains: ["firebasestorage.googleapis.com"],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
