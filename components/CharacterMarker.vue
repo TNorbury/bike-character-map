@@ -11,14 +11,14 @@
       </a>
 
       <!-- Only show the image if we have a URL for one... -->
-      <nuxt-img
+      <img
         v-if="hasImage(imgUrl)"
         :src="imgUrl"
         :alt="imgAltText"
         :title="imgAltText"
       />
       <!-- display a spinner when the image is loading -->
-      <div v-if="imgLoading" class="lds-dual-ring"></div>
+      <div v-else class="lds-dual-ring"></div>
     </l-popup>
   </l-marker>
 </template>
@@ -129,8 +129,8 @@ export default Vue.extend({
 }
 
 .lds-dual-ring {
-  width: 80px;
-  height: 80px;
+  width: 300px;
+  height: 300px;
   align-self: center;
 }
 .lds-dual-ring:after {

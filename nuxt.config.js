@@ -33,6 +33,7 @@ export default {
     "@nuxt/postcss8",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    "@nuxt/image",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -57,7 +58,6 @@ export default {
     ],
     "@nuxtjs/pwa",
     ["nuxt-leaflet", { ssr: false }],
-    "@nuxt/image",
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
