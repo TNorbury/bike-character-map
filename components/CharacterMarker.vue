@@ -129,7 +129,6 @@ export default Vue.extend({
 }
 
 .lds-dual-ring {
-  /* display: inline-block; */
   width: 80px;
   height: 80px;
   align-self: center;
