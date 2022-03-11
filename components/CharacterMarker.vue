@@ -89,6 +89,7 @@ export default Vue.extend({
     hasImage(image: String): boolean {
       return image !== "";
     },
+    // When the pop-up opens, check if we need to download the image
     onOpen(): void {
       if (this.imgUrl === "" && this.$props.character.img !== "") {
         this.imgLoading = true;
