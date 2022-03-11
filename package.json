@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
+    "@nuxtjs/firebase": "^8.2.2",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.11.3",
+    "firebase": "^9.6.8",
     "nuxt": "^2.15.3",
     "nuxt-leaflet": "^0.0.25",
     "vue2-leaflet": "^2.7.0"

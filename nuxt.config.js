@@ -33,15 +33,31 @@ export default {
     "@nuxt/postcss8",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    "@nuxt/image",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     "@nuxt/content",
+    [
+      "@nuxtjs/firebase",
+      {
+        config: {
+          apiKey: "AIzaSyCwsapOZsTMHX1OYyPlntIIzAaf3wuOjIw",
+          authDomain: "pdx-bike-character-map.firebaseapp.com",
+          projectId: "pdx-bike-character-map",
+          storageBucket: "pdx-bike-character-map.appspot.com",
+          messagingSenderId: "603794442604",
+          appId: "1:603794442604:web:3f36441b58676879d5cb49",
+        },
+        services: {
+          storage: true
+        }
+      },
+    ],
     "@nuxtjs/pwa",
     ["nuxt-leaflet", { ssr: false }],
-    "@nuxt/image",
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -52,7 +68,7 @@ export default {
   },
 
   image: {
-    provider: "netlify",
+    domains: ["firebasestorage.googleapis.com"],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
