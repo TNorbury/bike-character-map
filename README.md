@@ -1,6 +1,6 @@
 # bike-character-map
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8892d9c1-56e8-4ed1-a626-8f245cfdb4db/deploy-status)](https://musing-nightingale-cff63c.netlify.app)![NuxtJS](https://img.shields.io/badge/Nuxt-black?style=for-the-badge&logo=nuxt.js&logoColor=white)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8892d9c1-56e8-4ed1-a626-8f245cfdb4db/deploy-status)](https://bikeway-characters.tylernorbury.com)![NuxtJS](https://img.shields.io/badge/Nuxt-black?style=for-the-badge&logo=nuxt.js&logoColor=white)
 
 A map used to display all the wonderful characters that live in the bike lanes and bike ways of Portland, Oregon.
 Feel free to use the issues tab to suggest general site changes, or to inform me about characters that may have been missed (or submit them yourselves (see below))!
