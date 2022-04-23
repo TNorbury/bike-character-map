@@ -404,6 +404,85 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       [45.541058811799616, -122.6641492786004],
       "A purple, orange, and white bike. Two doughnuts with orange frosting and sprinkles serve as wheels"
     ),
+    new BikewayCharacter(
+      "Green Head",
+      "/characters/green_head.jpg",
+      [45.546956237654314, -122.62090320123195],
+      "Regular bike character, except their head is green"
+    ),
+    new BikewayCharacter(
+      "Bag on Head",
+      "/characters/bag_on_head.jpg",
+      [45.53008860390928, -122.68949384703276],
+      "Regular bike character, except they have a bag on their head"
+    ),
+    new BikewayCharacter(
+      "Upside Down Bike Indicator",
+      "/characters/upside_down_circle.jpg",
+      [45.50052887098444, -122.6718321612954],
+      "An indicator for the bike portion of a multi-modal path, except the circle with the bike is upside down"
+    ),
+    new BikewayCharacter(
+      "Fanny Pack (Lloyd)",
+      "/characters/fanny_pack_lloyd.jpg",
+      [45.53128831309289, -122.6587081286449],
+      "Regular bike character with a fanny pack"
+    ),
+    new BikewayCharacter(
+      "Chicken Biker ",
+      "/characters/chicken_biker.jpg",
+      [45.53983453836204, -122.60469658498013],
+      "The body of a regular bike character, but with the head of a chicken!"
+    ),
+    new BikewayCharacter(
+      "Scooter",
+      "/characters/scooter.jpg",
+      [45.5240152622537, -122.6701650968196],
+      "It's a bike character, but they're on a scooter!"
+    ),
+    new BikewayCharacter(
+      "Angel",
+      "/characters/angel.jpg",
+      [45.53227282453826, -122.658521731278],
+      "A bike character with wings and a halo"
+    ),
+    new BikewayCharacter(
+      "Dragon",
+      "/characters/dragon.jpg",
+      [45.493539054401424, -122.60931639984877],
+      "A green fire-breathing dragon riding a bike with a yellow front wheel, blue frame, and red rear wheel, pedals, seat, and handle bar"
+    ),
+    new BikewayCharacter(
+      "Captain Marvel Wheel",
+      "/characters/captain_marvel_wheel.jpg",
+      [45.55910175020189, -122.60311593751337],
+      "Regular bike with Captain Marvel's star logo in the front wheel"
+    ),
+    new BikewayCharacter(
+      "Batman Wheel",
+      "/characters/batman_wheel.jpg",
+      [45.55914229130429, -122.60364686081961],
+      "Regular bike with Batman's logo in the front wheel"
+    ),
+    new BikewayCharacter(
+      "Purple Baby Dragon",
+      "/characters/purple_baby_dragon.jpg",
+      [45.559143194231396, -122.60587825081299],
+      "Regular bike with a purple baby dragon sitting on the handle bars"
+    ),
+
+    new BikewayCharacter(
+      "Punisher Logo",
+      "/characters/punisher.jpg",
+      [45.55911294482017, -122.60678818146611],
+      "Regular bike with the punisher logo floating above it"
+    ),
+    new BikewayCharacter(
+      "Yellow Baby Dragon",
+      "/characters/yellow_baby_dragon.jpg",
+      [45.53422964068454, -122.67227032932328],
+      "Regular bike with a rider. A yellow baby dragon is sitting on the rear tire"
+    ),
   ];
 
   get getCharacters(): BikewayCharacter[] {
