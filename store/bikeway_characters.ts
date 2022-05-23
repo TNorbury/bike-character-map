@@ -483,6 +483,39 @@ export default class BikewayCharactersStoreModule extends VuexModule {
       [45.53422964068454, -122.67227032932328],
       "Regular bike with a rider. A yellow baby dragon is sitting on the rear tire"
     ),
+
+
+    new BikewayCharacter(
+      "Kermit",
+      "/characters/kermit.jpg",
+      [45.525009326198614, -122.68985724979784],
+      "Kermit the Frog, on a bike"
+    ),
+    new BikewayCharacter(
+      "American Soldier",
+      "/characters/da_troops.jpg",
+      [45.51471451915619, -122.67750443988633],
+      "Regular bike with a rider. The rider is dressed in camo which has a combination of light green, dark green, and tan. The rider is holding an American flag"
+    ),
+    new BikewayCharacter(
+      "Portlandia",
+      "/characters/portlandia.jpg",
+      [45.514617966761485, -122.67904854652745],
+      "Regular bike with a rider. The rider is the Portlandia statue. A light skinned woman in a short dress and medium length hair that is flowing behind here, she carries a trident. All of which are colored red-orange"
+    ),
+    new BikewayCharacter(
+      "Bunny",
+      "/characters/bunny.jpg",
+      [45.5378830075046, -122.61494709745978],
+      "Regular bike with a rider. The rider is a bunny with ears coming out of its helmet. The rider has a red satchel, another bunny's head is peaking out."
+    ),
+
+    new BikewayCharacter(
+      "Prince",
+      "/characters/prince.jpg",
+      [45.52287379633624, -122.65637584715371],
+      "Regular bike with a rider. The rider is prince. He has a cape with the prince symbol on it. A cloud is above him, raining on him (and you guessed it, the rain is purple)"
+    ),
   ];
 
   get getCharacters(): BikewayCharacter[] {
